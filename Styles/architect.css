@@ -81,6 +81,11 @@ nav>ul>li>a {
 
 }
 
+
+.banner-content p{
+    text-align: center;
+}
+
 .banner-title {
     font-size: 4rem;
     font-weight: 700;
@@ -138,6 +143,10 @@ main {
     font-weight: 700;
 }
 
+.features-span{
+    color: #FF900E;
+    font-weight: 700;
+}
 
 
 /* facts section */
@@ -189,6 +198,7 @@ main {
 
 .sponsor p {
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .sponsor h3,
@@ -211,11 +221,13 @@ p {
     display: flex;
     margin-top: 120px;
     margin-bottom: 100px;
-    gap: 110px;
+    gap: 10px;
+    width: 90%;
 }
 
 .feature-content {
-    margin-left: 150px;
+    margin-left: 130px;
+    
 }
 
 .feature-content .feature-card {
@@ -226,8 +238,55 @@ p {
     padding: 20px;
 }
 
+.feature-img img{
+    width: 100%;
+    margin-left: 80px;
+}
+
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    width: 342px;
+    padding: 40px 10px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin: 0;
+    
+}
+
+.ten-years-badge p{
+    font-size: 1.5rem;
+}
+
 .feature-content h3{
-    padding-bottom: 20px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    
+
+}
+
+.section-title-description{
+    padding-top: 30px;
+}
+
+
+/* footer style */
+
+
+footer{
+    margin: 100px 140px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 20px 40px;
+    color: var(--Dark-02, #424242);
+    font-size: 1rem;
 }
 
 /* Responsive media quires */
@@ -239,7 +298,7 @@ p {
     }
 
     nav,
-    .teams-container,
+    .teams-container, .features ,
     .facts-card-container,
     .sponsor-img-container {
         flex-direction: column;
@@ -277,6 +336,21 @@ p {
 
     }
 
+    .ft-mobile{
+        margin-left: 20px;
+    }
+
+    .feature-img img{
+        width: 100%;
+    }
+
+    .ten-years-badge{
+        margin-bottom: -90px;
+    }
+
+    footer{
+        margin: 10px;
+    }
 }
 
 /* Tablet or medium devices */
@@ -290,7 +364,7 @@ p {
 
     nav,
     .teams-container,
-    .sponsor-img-container {
+    .sponsor-img-container , .features {
         flex-direction: column;
     }
 
@@ -308,6 +382,11 @@ p {
     .teams-content {
         padding: 20px 90px;
     }
+
+    footer{
+        margin: 10px;
+    }
+}
 
 
 }
